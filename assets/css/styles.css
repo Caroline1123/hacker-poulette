@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Bellota";
+  src: url("./../font/Bellota-Regular.otf") format("opentype");
+}
+body {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d8187;
+}
+
+main {
+  font-family: "Bellota", sans-serif;
+  color: #303030;
+}
+
+form {
+  width: 80vw;
+  box-sizing: border-box;
+  background-color: #FFF;
+}
+form button {
+  background-color: #0d8187 !important;
+}/*# sourceMappingURL=styles.css.map */
