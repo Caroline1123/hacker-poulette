@@ -24,6 +24,6 @@ The company Hackers Poulette ™ sells Raspberry Pi accessory kits to build your
 
 ## Screenshots
 
-![App Screenshot](missing_input_message.png)
 ![App Screenshot](form_display.png)
+![App Screenshot](missing_input_message.png)
 ![App Screenshot](alert_message.png)
