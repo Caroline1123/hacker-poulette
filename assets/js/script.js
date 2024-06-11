@@ -31,8 +31,6 @@ form.addEventListener("submit", (e) => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
         let response = JSON.parse(xhr.responseText);
-        console.log(response);
-
         // Response OK: form data valid after verification, display success alert
         if (!response.valid) {
           for (let key in response.errors) {
