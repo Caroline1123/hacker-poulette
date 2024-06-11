@@ -13,31 +13,34 @@
         <header>
         </header>
         <main>
-            <!-- <?php include 'assets/php/forms.php'?> -->
-            <form id="contact-form" class="p-4 border rounded" action="assets/php/forms.php" method="POST">
-                <h2 class="mb-3">Contact Us</h2>
+            <form id="contact-form" class="p-4 border rounded" action="" method="POST">
+                <h2 class="mb-4">Contact Us</h2>
                 <div class="mb-2">
                     <label class="form-label" for="first-name">First Name: </label>
                     <input required class="form-control" name="first-name"  id="first-name" type="text">
+                    <div class="error" id="first-name-error"></div>
                 </div>
                 <div class="mb-2">
                     <label class="form-label" for="last-name">Last Name: </label>
                     <input required class="form-control" name="last-name" id="last-name" type="text">
+                    <div class="error" id="last-name-error"></div>
                 </div>
                 <div class="mb-2">
                     <label class="form-label" for="gender">Gender: </label><br>
                     <input type="radio" name="gender" id="F" value="F">
-                    <label class="form-label pe-2" for="F">Female</label>
+                    <label class="pe-2" for="F">Female</label>
                     <input type="radio" name="gender" id="M" value="M">
-                    <label class="form-label" for="M">Male</label>
+                    <label for="M">Male</label>
                 </div>
                 <div class="mb-2">
                     <label class="form-label" for="email">Your email address: </label>
                     <input required class="form-control" name="email" id="email" type="email">
+                    <div class="error" id="email-error"></div>
                 </div>
                 <div class="mb-2">
                     <label class="form-label" for="country">Country: </label>
                     <input required class="form-control" name="country" id="country" type="text">
+                    <div class="error" id="country-error"></div>
                 </div>
                 <div class="mb-2">
                     <label class="form-label" for="subject">Subject: </label>
@@ -50,14 +53,14 @@
                 <div class="mb-2">
                 <label class="form-label" for="message">Message: </label>
                 <textarea required class="form-control" name="message" id="message" type="text"></textarea>
+                <div class="error" id="message-error"></div>
                 </div> 
                 <input class="form-control" id="website" name="website" type="text" value=""  />
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
             </form>
         </main>
         <footer>
         </footer>
-        <!-- <?php require 'assets/php/forms.php'?> -->
     </body>
 </html>

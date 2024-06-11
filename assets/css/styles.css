@@ -19,6 +19,10 @@ main {
   color: #303030;
 }
 
+h2, .form-label {
+  font-weight: bold;
+}
+
 form {
   width: 80vw;
   box-sizing: border-box;
