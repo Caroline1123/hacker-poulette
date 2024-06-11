@@ -34,4 +34,11 @@ form button {
 
 #website {
   display: none;
+}
+
+.card-title {
+  justify-content: space-between;
+}
+.card-title h2 {
+  align-self: center;
 }/*# sourceMappingURL=styles.css.map */
