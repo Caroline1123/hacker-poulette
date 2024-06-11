@@ -101,6 +101,10 @@ if (empty(sanitize_input($_POST['message']))) {
     $response['errors']['message'] = "Message is required.";
 }
 
+// Return the validation response
+echo json_encode($response);
+
+// send the email
 if ($response['valid']) {
     $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
     $first_name = sanitize_input($_POST['first-name']);
@@ -109,8 +113,5 @@ if ($response['valid']) {
 
     sendmail($email, $first_name, $subject, $message);
 }
-
-// Return the validation response
-echo json_encode($response);
 
 ?>
